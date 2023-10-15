@@ -4,3 +4,4 @@
 - Caleb Carpenter
 - Anders Bahrami
 - Alex Zhang
+- Seth Mayhue
