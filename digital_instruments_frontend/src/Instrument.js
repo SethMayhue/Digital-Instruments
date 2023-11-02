@@ -7,6 +7,7 @@ class Instrument extends Component {
         this.instruments = new Map();
         this.downBinds = new Map();
         this.upBinds = new Map();
+        this.notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
 
         this.createBind('KeyA', 'note', 'A4');
         this.createBind('KeyS', 'note', 'A#4');
@@ -134,6 +135,10 @@ class Instrument extends Component {
         return (
             <div>
                 <p>Press the A-L and Z-V keys to play notes.</p>
+                {
+                    this.notes.map(note => (<button key={note}>{note}</button>))
+                }
+
             </div>
         );
     }
